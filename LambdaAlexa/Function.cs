@@ -20,8 +20,11 @@ namespace LambdaAlexa
             var requestType = input.GetRequestType();
             if (requestType == typeof(IntentRequest))
             {
+
+                var intentRequest = input.Request as IntentRequest;
+                var countryRequested = intentRequest.Intent.Slots["Country"].Value;
                 return MakeSkillResponse(
-                        $"Hello! This is the first skill developed bu Vaida using c sharp.",
+                        $"Hello! This is the first skill developed by Vaida. Would You like more information about {countryRequested}.",
                         true);
             }
             else

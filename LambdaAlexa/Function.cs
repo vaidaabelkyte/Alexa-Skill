@@ -23,6 +23,14 @@ namespace LambdaAlexa
 
                 var intentRequest = input.Request as IntentRequest;
                 var countryRequested = intentRequest.Intent.Slots["Country"].Value;
+
+                if (countryRequested == null)
+                {
+                    context.Logger.LogLine("Request was not understood");
+                    return MakeSkillResponse($"I'm sorry, I might be having a blond moment. Please ask again",
+                        false);
+                }
+
                 return MakeSkillResponse(
                         $"Hello! This is the first skill developed by Vaida. Would You like more information about {countryRequested}.",
                         true);

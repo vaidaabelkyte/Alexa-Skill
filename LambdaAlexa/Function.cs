@@ -40,7 +40,7 @@ namespace LambdaAlexa
                 }
 
                 var countryInfo = await GetCountryInfo(countryRequested, context);
-                var outputText = $"Hello! This is the first skill developed by Vaida. Would You like more information about {countryRequested}. The capital is {countryInfo.capital}.";
+                var outputText = $"Hello! This is the first skill developed by Vaida. About {countryRequested}. The capital is {countryInfo.capital} and the population is {countryInfo.population} and the native name is {countryInfo.nativeName}.";
                 return MakeSkillResponse(outputText, true);
             }
             else

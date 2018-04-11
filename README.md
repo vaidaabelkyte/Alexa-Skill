@@ -133,6 +133,7 @@ Interaction model was made the same way as for the skill Country Details. For th
 Stay fit skill uses different module of request an responce.
 The skill starts when user says invocation name == Alexa, open Stay Fit. Alexa asks user to chose what type of exercise user wants and waits for responce (slot). After user says one of 4 choices, Alexa continues with the skill and gives detail of the exercise as well as doing counting 1 per 1 sec.
 
+![screenshot_20180411-222616](https://user-images.githubusercontent.com/15648433/38646061-5da216fc-3dde-11e8-8da8-2dac4a9d3716.png)
 
 
 

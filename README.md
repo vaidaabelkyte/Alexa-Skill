@@ -126,9 +126,19 @@ The function is now "pushed" into <b>AWS developer console</b> and can be found 
 Add the <b>Trigger</b>  called <b>Alexa Skills Kit</b> to give Alexa the permissions to lunch the function.<br>
 After the built is complete, the testing is available in the developer portal with the Alexa voice simulator or can be done on Your echo device.
 
+<h4>Stay Fit Skill</h4>
+Another folder in this repository contains the fitness skill I developed on Amazon Service Colsole. For this skill I did not use local machine to create a project.
+I created an empty Lambda function directly on Amazon service. After adding trigger Alexa Skill Kit, I was able to write the code  and save the stage of the function as long as I was going with the development, (less configuration).
+Interaction model was made the same way as for the skill Country Details. For the second skill I did not use slot types by Amazon. I created my own related to the intents i created.
+Stay fit skill uses different module of request an responce.
+The skill starts when user says invocation name == Alexa, open Stay Fit. Alexa asks user to chose what type of exercise user wants and waits for responce (slot). After user says one of 4 choices, Alexa continues with the skill and gives detail of the exercise as well as doing counting 1 per 1 sec.
+
+
+
+
 <h4>Conclusion</h4>
-The Skill is not published to Amazon store. It was only developed for educational purposes. (works only on my own Alexa)<br>
-I learned alot about how Amazon services work and how to configure them for my project. Also learned how to use Developer Portal and the process of creating a new Skill. I am definitely going to create more Skills and maybe publish to Amazon store for the world users.
+The Country Detail Skill is not published to Amazon store. It was only developed for educational purposes. (works only on my own Alexa) And the Stay Fit Skill is in the process of certification<br>
+I learned alot about how Amazon services work and how to configure them for my project. Also learned how to use Developer Portal and the process of creating a new Skill. I am definitely going to create more Skills.
 
 
 

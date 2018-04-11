@@ -127,11 +127,13 @@ Add the <b>Trigger</b>  called <b>Alexa Skills Kit</b> to give Alexa the permiss
 After the built is complete, the testing is available in the developer portal with the Alexa voice simulator or can be done on Your echo device.
 
 <h4>Stay Fit Skill</h4>
-Another folder in this repository contains the fitness skill I developed on Amazon Service Colsole. For this skill I did not use local machine to create a project.
-I created an empty Lambda function directly on Amazon service. After adding trigger Alexa Skill Kit, I was able to write the code  and save the stage of the function as long as I was going with the development, (less configuration).
-Interaction model was made the same way as for the skill Country Details. For the second skill I did not use slot types by Amazon. I created my own related to the intents i created.
-Stay fit skill uses different module of request an responce.
+Another folder in this repository contains the fitness skill I developed on Amazon Service Colsole. For this skill I did not use local machine to create a project.<br>
+I created an empty Lambda function directly on Amazon service. After adding trigger Alexa Skill Kit, I was able to write the code  and save the stage of the function as long as I was going with the development, (less configuration).<br>
+Interaction model was made the same way as for the skill Country Details. For the second skill I did not use slot types by Amazon. I created my own related to the intents i created.<br>
+Stay fit skill uses different module of request an responce and it is written using JavaScript<br>
 The skill starts when user says invocation name == Alexa, open Stay Fit. Alexa asks user to chose what type of exercise user wants and waits for responce (slot). After user says one of 4 choices, Alexa continues with the skill and gives detail of the exercise as well as doing counting 1 per 1 sec.
+
+<br>
 
 ![screenshot_20180411-222616](https://user-images.githubusercontent.com/15648433/38646061-5da216fc-3dde-11e8-8da8-2dac4a9d3716.png)
 
